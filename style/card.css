@@ -1,0 +1,129 @@
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background:  hsl(217, 54%, 11%);
+}
+
+.container{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.warrper{
+    margin: 2rem 1rem;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 1.25rem 1.8rem hsl(217, 50%, 7%);
+    
+}
+.img-top{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.img-top img{
+    width: 100%;
+    display: block;
+
+}
+.img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--CyanBG-);
+    display: none;
+}
+
+.img-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img-top:hover .img-overlay{
+    cursor: pointer;
+    display: block;
+}
+
+.box-text a {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.box-text a:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.box-text p{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.eth,  .log-days{
+    display: flex;
+    align-items: center;
+}
+
+.eth p{
+    font-size: 15px;
+    font-weight: 600;
+    color:hsl(178, 100%, 50%);
+    margin-left: 8px;
+}
+
+.log-days p {
+    color: hsl(215, 51%, 70%) ;
+    margin-left: 8px;
+}
+
+hr{
+    border: none;
+    border-top:1px solid  hsl(215, 51%, 70%);
+    margin-bottom: 1rem;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 13%;
+    border:2px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+.user p{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+}
+
+.user a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.user a:hover{
+    color: hsl(178, 100%, 50%);
+}
